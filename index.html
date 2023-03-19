@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla To Do Challenge</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <h1>Vanilla To Do Challenge</h1>
+
+      <div id="to-do-form" class="to-do-form">
+        <input type="text" id="new-to-do-title" placeholder="Title" />
+
+        <textarea
+          name="Description"
+          id="new-to-do-description"
+          cols="30"
+          rows="10"
+          placeholder="Description"
+        ></textarea>
+
+        <button id="add-btn" onclick="addToDo()" disabled="true">
+          Add new task
+        </button>
+      </div>
+
+      <ul id="to-do-list" class="to-do-list"></ul>
+
+      <button id="clear-btn" onclick="clearToDoList()" class="clear-btn">
+        Clear all tasks
+      </button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
